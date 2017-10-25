@@ -1,9 +1,9 @@
 import {row, rows, empty} from "../config/db";
 
 export function all(categoryid: number): Promise<Array<models.ICategory>> {
-    return rows("allProducts")
+    return rows("allProducts", [categoryid])
 }
 
 export function single(id: number): Promise<Array<models.IProduct>> {
-    return rows("singleProduct")
+    return row("singleProduct", [id])
 }
