@@ -12,19 +12,27 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     $routeProvider
     .when('/', {
         templateUrl: 'views/welcome.html',
-        controller: 'apparel'
+        // controller: ''
 
     })
-    // .when('/apparel', {
-    //     templateUrl: 'views/placeholder.html',
-    //     controller : 'placeholderController'
-    // })
-    // .when('/misc', {
-    //     templateUrl: 'views/placeholder.html',
-    //     controller : 'placeholderController'
-    // })
-    // .when('/checkout', {
-    //     templateUrl: 'views/placeholder.html',
-    //     controller : 'placeholderController'
-    // })
+    .when('/apparel', {
+        templateUrl: 'views/apparel.html',
+        controller : 'apparel'
+    })
+    .when('/misc', {
+        templateUrl: 'views/misc.html',
+        controller : 'misc'
+    })
+    .when('/checkout', {
+        templateUrl: 'views/placeholder.html',
+        controller : 'placeholderController'
+    })
+    .when('/contact', {
+        templateUrl: 'views/placeholder.html',
+        controller: 'placeholderController'
+    })
+    .when('/:id', {
+        templateUrl: 'views/placeholder.html',
+        controller: 'singleProduct'
+    })
 }])
