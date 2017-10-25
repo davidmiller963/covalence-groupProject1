@@ -8,13 +8,14 @@ angular.module('store.controllers', [])
     }])
     .controller('misc', ['$scope', 'Product', '$routeParams', function($scope, Product, $routeParams){
         function getMiscProducts() {
-            $scope.Product = Product.query({categoryid: 2});
+            $scope.Misc = Product.query({categoryid: 2});
            console.log(Product.query({ categoryid: 2 }))
         }
         getMiscProducts();
     }])
-    .controller('singleProduct', ['$scope','$routeParams', 'Product', function($scope, $routeParams, Product){
+    .controller('singleProduct', ['$scope','$routeParams', 'Single', function($scope, $routeParams, Single){
         const idToGet = $routeParams.id;
-        $scope.Product = Product.get({id: idToGet});
+        console.log(idToGet)
+        $scope.single = Single.get({id: idToGet});
 
     }])
