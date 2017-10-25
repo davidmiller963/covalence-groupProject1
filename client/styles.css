@@ -1,0 +1,130 @@
+nav {
+    opacity: 0.9;
+    width: 100%;
+    padding: 0.4em;
+}
+.line {
+    background-color: none;
+    background-image: none;
+    border-left: 3px solid #43b6c8;
+    margin-top: 0.75em;
+    height: 2.75em;
+}
+ #pipe {
+    font-size: 2.25em;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline;
+} 
+.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #43b6c8;
+}
+.navbar-inverse .navbar-nav>.active:active {
+    background-color: none;
+    border-bottom: 3px solid #43b6c8;
+}
+.nav-logo {
+    height: 30px;
+    width: auto;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1.5em;
+}
+li {
+    margin-right: 1.5em;
+}
+
+.nav-logo-b {
+    height: 30px;
+    width: auto;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.nav-text {
+    margin-top: 0.3em; 
+    font-size: 1.25em;
+    color: #43b6c8;
+}
+
+.custom-top {
+    position: absolute;
+    left:0;
+    border-radius: 0;
+    z-index: 1000;
+    border: none;
+}
+
+.welcome {
+    height: 100vh;
+    background-image: url(images/covalence-store-home.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.welcome img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.hello-text {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+.hello-text h1 {
+    font-size: 3.75em;
+}
+#shop-btn {
+    margin-top: 1.5em;
+    border-radius: none;
+    padding: 1em;
+}
+#shop-btn:focus {
+    outline: 0;
+}
+.btn {
+    font-weight: lighter;
+}
+
+.jumbotron {
+    padding-top:0;
+    background-color: white;
+}
+.line-line {
+    margin-bottom: 5em;
+}
+ .thumbnail {
+    background-color:white;
+    border: white;
+    border-radius: 0em;
+    transition: none;
+    padding: 0em;
+} 
+.product {
+    min-width: 20em;
+    min-height: 20em;
+    width: auto;
+    height: auto;
+}
+ .grid-market {
+    margin-bottom: 1em;
+    width: 20em;
+} 
+.products {
+    max-width: 20em;
+}
+
+.description {
+    color: rgb(118,120, 133);
+}
+.currency {
+    color: rgb(67, 182, 200);
+    float: right;
+}
