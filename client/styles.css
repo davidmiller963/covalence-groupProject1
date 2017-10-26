@@ -128,3 +128,31 @@ li {
     color: rgb(67, 182, 200);
     float: right;
 }
+
+.product-hero {
+    width: 100%;
+}
+
+.product-thumbnail {
+    width: 250px;
+}
+
+.single-container {
+    margin: 10em 5em 2em;
+}
+.currency-b {
+    color: rgb(67, 182, 200);
+}
+.description-b {
+    color: rgb(118,120, 133);
+    font-size: 0.85em;
+}
+#add-btn {
+    border-radius: none;
+    padding: 1em;
+    margin-top: 1.5em;
+    width: 12em;
+}
+#add-btn:focus {
+    outline: 0;
+}
