@@ -28,8 +28,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         controller : 'placeholderController'
     })
     .when('/contact', {
-        templateUrl: 'views/placeholder.html',
-        controller: 'placeholderController'
+        templateUrl: 'views/contact.html',
+        controller: 'contact'
     })
     .when('/:id', {
         templateUrl: 'views/placeholder.html',

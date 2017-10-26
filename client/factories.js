@@ -6,3 +6,6 @@ angular.module('store.productFactory', [])
     return $resource('/api/products/:id', {id: '@id'}, {
     });
 }])
+.factory('ContactFrom', ['$resource', function($resource){
+   return $resource('/api/contact/:id', { id: '@id' })
+}])

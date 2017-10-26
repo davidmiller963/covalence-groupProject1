@@ -19,3 +19,17 @@ angular.module('store.controllers', [])
         $scope.single = Single.get({id: idToGet});
 
     }])
+    .controller('contact', ['$scope', 'ContactForm', function($scope, ContactForm){
+    //   TODO: edit contact.html to use ng-submit="send() with email and message models"
+        $scope.send = function() {
+            let contact = new ContactForm({
+                email: $scope.email,
+                message: $scope.message
+            });
+            contact.$save(function(){
+                alert('Thank you for your message. We will get back with you as soon as possible.')
+            }, function(err){
+                console.log(err)
+            });
+        }
+    }])
