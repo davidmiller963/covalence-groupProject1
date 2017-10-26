@@ -39,7 +39,7 @@
                     <ul class="nav navbar-nav">
                         <li class="line"> </li>
                         <li class="underline">
-                            <a href="/apparel" class="nav-text" ng-class="{'selected-nav' : selected==='apparel'}" ng-click="selected = 'apparel'">Apparel</a>
+                            <a href="/product" class="nav-text" ng-class="{'selected-nav' : selected==='product'}" ng-click="selected = 'product'">Product</a>
                         </li>
                         <li class="underline">
                             <a href="/misc" class="nav-text" ng-class="{'selected-nav' : selected==='misc'}" ng-click="selected = 'misc'">Misc</a>
@@ -51,7 +51,9 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="nav-text" href="/checkout">Cart
+                            <a class="nav-text" href="/checkout">
+                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                                <span class="badge">5</span></a>
                             </a>
                         </li>
                     </ul>

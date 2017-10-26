@@ -15,8 +15,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         // controller: ''
 
     })
-    .when('/apparel', {
-        templateUrl: 'views/apparel.html',
+    .when('/product', {
+        templateUrl: 'views/product.html',
         controller : 'apparel'
     })
     .when('/misc', {
