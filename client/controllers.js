@@ -24,9 +24,10 @@ angular.module('store.controllers', [])
     //   TODO: edit contact.html to use ng-submit="send() with email and message models"
         $scope.send = function() {
             let contact = new ContactForm({
-                email: $scope.email,
+                from: $scope.email,
                 message: $scope.message
             });
+            console.log(contact);
             contact.$save(function(){
                 alert('Thank you for your message. We will get back with you as soon as possible.')
             }, function(err){

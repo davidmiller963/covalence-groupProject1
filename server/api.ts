@@ -6,7 +6,7 @@ const router = Router();
 
 router
   .use('/products', products)
-  .use('contact', contactFormController)
+  .use('/contactforms', contactFormController)
 
 
 
