@@ -24,11 +24,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         controller : 'misc'
     })
     .when('/checkout', {
-        templateUrl: 'views/checkout.html',
+        templateUrl: 'views/placeholder.html',
         controller : 'placeholderController'
     })
     .when('/contact', {
-        templateUrl: 'views/contact.html',
+        templateUrl: 'views/placeholder.html',
         controller: 'placeholderController'
     })
     .when('/:id', {
