@@ -16,7 +16,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 
     })
     .when('/apparel', {
-        templateUrl: 'views/apparel.html',
+        templateUrl: 'views/product.html',
         controller : 'apparel'
     })
     .when('/misc', {
@@ -24,11 +24,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         controller : 'misc'
     })
     .when('/checkout', {
-        templateUrl: 'views/placeholder.html',
+        templateUrl: 'views/checkout.html',
         controller : 'placeholderController'
     })
     .when('/contact', {
-        templateUrl: 'views/placeholder.html',
+        templateUrl: 'views/contact.html',
         controller: 'placeholderController'
     })
     .when('/:id', {
