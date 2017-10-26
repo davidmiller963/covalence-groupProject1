@@ -19,8 +19,8 @@
 </head>
 
 <body>
-        <div ng-view></div>
-    <div class="container" ng-controller="NavController">
+          
+    <div class="container">
         <nav class="navbar navbar-inverse custom-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -44,6 +44,9 @@
                         <li class="underline">
                             <a href="/misc" class="nav-text" ng-class="{'selected-nav' : selected==='misc'}" ng-click="selected = 'misc'">Misc</a>
                         </li>
+                        <li class="underline">
+                                <a href="/contact" class="nav-text" ng-class="{'selected-nav' : selected==='contact'}" ng-click="selected = 'contact'">Contact</a>
+                            </li>
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -56,6 +59,11 @@
             </div>
         </nav>
     </div>
+    
+            <div ng-view></div>            
+    
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-resource.js"></script>
