@@ -17,5 +17,6 @@ angular.module('store.controllers', [])
         const idToGet = $routeParams.id;
         console.log(idToGet)
         $scope.single = Single.get({id: idToGet});
+        console.log($scope.single)
 
     }])

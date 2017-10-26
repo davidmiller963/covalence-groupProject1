@@ -32,7 +32,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         controller: 'placeholderController'
     })
     .when('/:id', {
-        templateUrl: 'views/placeholder.html',
+        templateUrl: 'views/singleview.html',
         controller: 'singleProduct'
     })
 }])
