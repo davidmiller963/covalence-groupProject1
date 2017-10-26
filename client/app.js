@@ -29,7 +29,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     })
     .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'placeholderController'
+        controller: 'contact'
     })
     .when('/:id', {
         templateUrl: 'views/singleview.html',
