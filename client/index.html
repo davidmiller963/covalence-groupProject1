@@ -51,8 +51,8 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a class="nav-text" href="/checkout">
-                                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+                            <a class="nav-text" >
+                                <span onclick="openNav()" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
                                 <span class="badge">5</span></a>
                             </a>
                         </li>
@@ -61,6 +61,15 @@
             </div>
         </nav>
     </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
     
             <div ng-view></div>            
     
@@ -74,6 +83,7 @@
     <script src="controllers.js"></script>
     <!-- <script src="directives.js"></script> -->
     <script src="app.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
