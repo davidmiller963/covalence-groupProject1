@@ -25,7 +25,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     })
     .when('/checkout', {
         templateUrl: 'views/checkout.html',
-        controller : 'placeholderController'
+        controller : 'cardController'
     })
     .when('/contact', {
         templateUrl: 'views/contact.html',

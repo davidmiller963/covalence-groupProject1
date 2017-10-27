@@ -18,7 +18,7 @@ declare namespace models {
     interface IPurchase {
         id: number;
         price: number;
-        stripeTransactionId: string;
+        stripe: string;
     }
 
     interface IProductPurchase {
