@@ -211,3 +211,31 @@ li {
 #checkoutJumbo{
     padding-top: 7em;
 }
+
+.checkout-container {
+    margin: 10em 5em 2em;
+    border: 1px solid lightgray;
+    border-radius: 0.45em;
+    overflow: auto;
+    background-color: rgb(244, 244, 244);
+}
+
+.badge {
+    margin-bottom: .5em;
+    background-color: #2aabd2;
+}
+
+.left-block {
+    margin-top: 0.5em;
+    margin-left: -3em;
+}
+
+#submit-btn {
+    border-radius: none;
+    margin-top: 0.5em;
+    width: 20em;
+    font-size: 1.25em;
+}
+#submit-btn:focus {
+    outline: 0;
+}
