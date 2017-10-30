@@ -20,7 +20,7 @@ angular.module('store.controllers', [])
         console.log($scope.single);
 
 
-        
+        if (typeof(Storage) !== "undefined") {
             $scope.keys = [];
             console.log($scope.keys);
             $scope.cache = $cacheFactory.get('cacheId') || $cacheFactory('cacheId');
@@ -34,11 +34,15 @@ angular.module('store.controllers', [])
                 $scope.cache.put(idToGet, angular.isUndefined(idToGet) ? null : idToGet);
 
             };
+        } else {
+            console.log("No shopping for you")
+        }
+
+            
             
         
     }])
     .controller('contact', ['$scope', 'ContactForm', function ($scope, ContactForm) {
-        //   TODO: edit contact.html to use ng-submit="send() with email and message models"
         $scope.send = function () {
             let contact = new ContactForm({
                 from: $scope.email,
